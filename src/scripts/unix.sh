@@ -62,7 +62,6 @@ read_env() {
   tool_cache_path_dir="${setup_php_tool_cache_dir:-${SETUP_PHP_TOOL_CACHE_DIR:-${RUNNER_TOOL_CACHE:-/opt/hostedtoolcache}/setup-php/tools}}"  
 
   if [[ "$runner" = "github" && $_runner = "self-hosted" ]]; then
-    fail_fast=true
     add_log "$cross" "Runner" "Runner set as github in self-hosted environment"
   fi
 
